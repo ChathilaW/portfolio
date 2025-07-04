@@ -2,6 +2,7 @@
 
 html{
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 * {
@@ -10,6 +11,7 @@ html{
 }
 body {
   background-color: #fff8f0;
+  overflow-x: hidden;
 }
 
 header a {
@@ -25,21 +27,40 @@ header {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 300px;
+  gap: 200px;
   overflow: hidden;
   background-color: #3c3c3c;
 }
 
 nav{
   display: flex;
-  flex-direction: row;
-  margin-right: -150px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  gap: 150px;
+}
+
+.logo-container {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fdd003;
+}
+
+.nav-links{
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+    margin-left: 25px;
 }
 
 nav a {
-  padding: 20px;
-  transition: all 0.3s ease 0s;
-  color: #ffffff;;
+  padding: 5px;
+  position: relative;
+  transition: transform 0.3s ease-out;
+  display: inline-block;
+  color: #ffffff;
 }
 
 
@@ -49,18 +70,9 @@ nav a.active {
 
 nav a:hover {
   color: #fdd003;
+  transform: skewX(-15deg);
 }
 
-.logo-container {
-  display: flex;
-  align-items: center;
-  margin-left: -100px;
-}
-
-.logo-container img {
-  height: 40px;
-  margin-right: 10px;
-}
 
 .logo {
   width: 50px; /* Adjust size as needed */

@@ -1,0 +1,279 @@
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%; /* Adjust for desired content width */
+        max-width: 100%; /* Prevents content from stretching too wide */
+        margin: auto; /* Centers the content horizontally */
+        padding-top: 50px;
+        box-sizing: border-box;
+      }
+
+      /* Hero Section */
+      .hero {
+        color: rgb(0, 0, 0);
+        padding: 350px 5px 350px 50px;
+        text-align: left;
+      }
+
+      .hero-content h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+      }
+
+      .hero-content p {
+        font-size: 1.5rem;
+      }
+
+      /* Mission Section */
+      .about {
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+        margin-top: -10px;
+      }
+
+      .about-topic{
+        padding: 30px 20px 50px 20px;
+        text-align: center;
+      }
+
+      .about-topic h2 {
+        font-size: 2rem;
+        margin-bottom: 0px;
+      }
+
+      .about-details{
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 100px;
+      }
+
+      .about-para{
+        width: 100%;
+        max-width: 550px;
+        height: auto;
+        padding: 20px;
+        border-radius: 15px;
+        background-color: aqua;
+      }
+
+      .about-para p {
+        margin: 0;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+      }
+
+      .about-pic{
+        width: 100%;
+        max-width: 550px;
+        height: auto;
+        border-radius: 15px;
+        background-color: aquamarine;
+      }
+
+      .about-pic img {
+        width: 100%;
+        height: auto;
+        border-radius: 15px; /* Optional: matches container rounding */
+        object-fit: cover;   /* Optional: maintain cropping consistency */
+        display: block;      /* Removes bottom spacing from inline images */
+      }
+
+      /* Content Links Section */
+      .content-links {
+        padding: 30px 5px 30px 5px;
+        text-align: center;
+      }
+
+      .content-links h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+
+      .card-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .card {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+        width: 300px;
+        height: 300px;
+        text-decoration: none;
+        color: #333;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .card:hover {
+        background-color: #ffc107;
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .card img {
+        width: 100%;
+        height: 150px;
+      }
+
+      .card-content {
+        padding: 15px;
+      }
+
+      .card-content h3 {
+        font-size: 1.25rem;
+        margin-bottom: 10px;
+      }
+
+      .card-content p {
+        font-size: 0.9rem;
+      }
+
+    /* Mobile phones (up to 600px) */
+@media screen and (max-width: 600px) {
+  header {
+    position: sticky;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .logo-container {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+
+  .nav-links li {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .nav-links a {
+    display: block;
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 0.95rem;
+    text-align: left;
+  }
+
+  .hero {
+    padding: 150px 10px 50px 10px; /* reduce padding for mobile */
+  }
+
+  .about-details {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+  }
+
+  .about-para,
+  .about-pic {
+    width: 90%;
+    height: auto;
+  }
+
+  .top {
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+/* Tablets (601px to 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+  }
+
+  .logo-container {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-right: 50px;
+  }
+
+  .nav-links li {
+    margin: 10px;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+  }
+
+  .about-details {
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .about-para,
+  .about-pic {
+    width: 40%;
+    height: auto;
+  }
+
+  
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .content-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 5px 30px 50px;
+    text-align: center;
+  }
+
+  .card {
+    width: 100%;
+    
+  }
+
+  .hero {
+    padding: 400px 0px 200px 0px;
+    text-align: center;
+  }
+
+}
+
+
