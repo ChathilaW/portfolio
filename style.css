@@ -27,9 +27,16 @@ header {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 200px;
   overflow: hidden;
+  gap: 10%;
+  z-index: 1000;
   background-color: #3c3c3c;
+}
+
+.logo-container {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fdd003;
 }
 
 nav{
@@ -37,13 +44,6 @@ nav{
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
-  gap: 150px;
-}
-
-.logo-container {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #fdd003;
 }
 
 .nav-links{

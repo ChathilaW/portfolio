@@ -1,220 +1,266 @@
-      .wrapper {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        width: 100%; /* Adjust for desired content width */
-        max-width: 100%; /* Prevents content from stretching too wide */
-        margin: auto; /* Centers the content horizontally */
-        padding-top: 50px;
-        box-sizing: border-box;
-      }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%; /* Adjust for desired content width */
+    max-width: 100%; /* Prevents content from stretching too wide */
+    margin: auto; /* Centers the content horizontally */
+    padding-top: 50px;
+    box-sizing: border-box;
+  }
 
-      /* Hero Section */
-      .hero {
-        color: rgb(0, 0, 0);
-        padding: 350px 5px 350px 50px;
-        text-align: left;
-      }
+  /* Hero Section */
+  .hero {
+    color: rgb(0, 0, 0);
+    padding: 350px 5px 350px 50px;
+    text-align: left;
+  }
 
-      .hero-content h1 {
-        font-size: 3rem;
-        margin-bottom: 10px;
-      }
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
 
-      .hero-content p {
-        font-size: 1.5rem;
-      }
+  .hero-content p {
+    font-size: 1.5rem;
+  }
 
-      /* Mission Section */
-      .about {
-        padding: 40px 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 30px;
-        margin-top: -10px;
-      }
+  /* Mission Section */
+  .about {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: -10px;
+  }
 
-      .about-topic{
-        padding: 30px 20px 50px 20px;
-        text-align: center;
-      }
+  .about-topic{
+    padding: 30px 20px 50px 20px;
+    text-align: center;
+  }
 
-      .about-topic h2 {
-        font-size: 2rem;
-        margin-bottom: 0px;
-      }
+  .about-topic h2 {
+    font-size: 2rem;
+    margin-bottom: 0px;
+  }
 
-      .about-details{
-        padding: 10px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 100px;
-      }
+  .about-details{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+  }
 
-      .about-para{
-        width: 100%;
-        max-width: 550px;
-        height: auto;
-        padding: 20px;
-        border-radius: 15px;
-        background-color: aqua;
-      }
+  .about-para{
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    padding: 20px;
+    padding-top: 0px;
+    gap: 50px;
+    border-radius: 15px;
+    overflow: hidden;
+  }
 
-      .about-para p {
-        margin: 0;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-      }
+  .about-para h2{
+    margin-bottom: 10px;
+  }
 
-      .about-pic{
-        width: 100%;
-        max-width: 550px;
-        height: auto;
-        border-radius: 15px;
-        background-color: aquamarine;
-      }
+  .about-para p {
+    margin: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
 
-      .about-pic img {
-        width: 100%;
-        height: auto;
-        border-radius: 15px; /* Optional: matches container rounding */
-        object-fit: cover;   /* Optional: maintain cropping consistency */
-        display: block;      /* Removes bottom spacing from inline images */
-      }
+  .about-pic{
+    width: 300px;
+    height: 500px;
+    border-radius: 15px;
+    background-color: aquamarine;
+  }
 
-      .education{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-        padding: 100px 40px 20px 40px;
-      }
+  .about-pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px; /* Optional: matches container rounding */
+    object-fit: cover;   /* Optional: maintain cropping consistency */
+    display: block;      /* Removes bottom spacing from inline images */
+  }
 
-      .education h2{
-        text-align: center;
-        margin-bottom: 50px;
-        font-size: 2.5rem;
-      }
+  .education-box {
+    margin-top: 30px ;
+    background-color: #2a2a2a;
+    border-radius: 12px;
+    padding: 20px 30px;
+    width: 100%;
+    max-width: 580px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
 
-      .edu-cards-con{
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-        margin-right: 20px;
-      }
+  .education-box h2 {
+    color: #ff5722;
+    margin-bottom: 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
 
-      .edu-card{
-        width: 1275px;
-        height: auto;
-        border-radius: 15px;
-        overflow: hidden;
-        background-color: yellow;
+  .edu-item {
+    border-left: 3px solid #ff5722;
+    padding-left: 12px;
+    margin-bottom: 20px;
+  }
 
-      }
+  .edu-item h3 {
+    color: white;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+  }
 
-      .edu-card img{
-        height: 200px;
-        width: 100%;
-        object-fit: cover;
-      }
+  .edu-item .duration {
+    color: #ff8a50;
+    font-size: 14px;
+    margin: 4px 0;
+  }
 
-      .edu-card p{
-        padding: 20px;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-        text-align: left;
-      }
+  .edu-item p {
+    margin: 0;
+    color: #ccc;
+    font-size: 13px;
+  }
 
-      /*Languages & Tools*/
-      .lan-tool {
-        width: 90%;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 150px 20px 10px 20px;
-      }
 
-      .lantool h2 {
-        text-align: center;
-        margin-bottom: 50px;
-        font-size: 2.5rem;
-      }
 
-      .lantool-card-con {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 30px;
-      }
+  /*languages & tools*/
+  /* Container layout */
+  .lan-tool {
+    margin-top: 100px;
+    padding: 0px 200px 0px 200px;
+    text-align: center;
+  }
 
-      .lantool-card{
-        border-radius: 15px;
-        overflow: hidden;
-        background-color: aquamarine;
-      }
+  .lan-tool h4 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
 
-      .lantool-card img{
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-      }
+  /* Container for hex rows */
+  .hex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
 
-      .lantool-info{
-        padding: 20px;
-        text-align: justify;
-      }
-      
+  /* Each row of hexes */
+  .hex-row {
+    display: flex;
+    gap: 15px;
+  }
 
-      /* Projects Section */
-      .projects-done {
-        width: 90%;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 100px 20px;
-      }
+  /* Offset every alternate row */
+  .hex-row.offset {
+    gap: 15px;
+  }
 
-      .projects h3 {
-        text-align: center;
-        margin-bottom: 50px;
-        font-size: 2.5rem;
-      }
+  /* Hexagon shape */
+  .hex {
+    width: 130px;
+    height: 130px;
+    position: relative;
+    overflow: hidden;
+    background: white;
+    clip-path: polygon(
+      50% 0%, 100% 25%, 100% 75%,
+      50% 100%, 0% 75%, 0% 25%
+    );
+    margin: -10px 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    text-transform: capitalize;
+  }
 
-      .project-card-cont {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 30px;
-      }
+  .hex img {
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    object-fit: cover;
+    z-index: 0;
+    clip-path: inherit; /* ensures image follows same hex shape */
+  }
 
-      .project-card{
-        border-radius: 15px;
-        overflow: hidden;
-        background-color: aquamarine;
-      }
+  .hex-blank {
+    width: 130px;
+    height: 130px;
+    background: white;
+    clip-path: polygon(
+      50% 0%, 100% 25%, 100% 75%,
+      50% 100%, 0% 75%, 0% 25%
+    );
+    margin: -10px 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    text-transform: capitalize;
+  }
+   
 
-      .project-card img{
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-      }
+  /* Projects Section */
+  .projects-done {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 100px 20px;
+    }
 
-      .project-info{
-        padding: 20px;
-        text-align: justify;
-      }
+  .projects h4 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+  }
 
-      .project-links {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 20px;
-      }
+  .project-card-cont {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
 
-      .project-links a {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-      }
+  .project-card{
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: aquamarine;
+  }
+
+  .project-card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .project-info{
+    padding: 20px;
+    text-align: justify;
+  }
+
+  .project-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .project-links a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
 
     /* Mobile phones (up to 600px) */
 @media screen and (max-width: 600px) {
@@ -290,7 +336,6 @@
 
   nav {
     flex-direction: column;
-    gap: 20px;
     padding: 15px;
   }
 
@@ -316,33 +361,42 @@
     gap: 40px;
   }
 
+  .education-box{
+    width: auto;
+    height: auto;
+  }
+
   .about-para,
   .about-pic {
     width: 40%;
     height: auto;
   }
 
-  .edu-card-con{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
+
+  .lan-tool {
+    padding: 10px 10px; /* reduce horizontal padding */
   }
 
-  .edu-card{
+  .hex, .hex-blank {
+    width: 80px;
+    height: 80px;
+  }
+
+  .hex-row, .hex-row.offset {
+    gap: 10px;
+  }
+
+  .hex, .hex-blank {
+    margin: -8px 2px; /* reduce overlap on smaller screens */
+    font-size: 0.9rem;
+  }
+
+  .hex img {
     width: 100%;
-  }
-
-  .lantoon-card{
-    width: 100%;
-  }
-
-  .lan-tool{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px 5px 30px 50px;
-    text-align: center;
+    height: 100%;
+    object-fit: cover;
+    clip-path: inherit;
+    opacity: 0.3;
   }
   
   .project-card-cont {
@@ -353,7 +407,8 @@
   }
 
   .project-card{
-    width: 100%;
+    width: auto;
+    max-width: 600px;
   }
 
   .projects-done{
@@ -364,10 +419,7 @@
     text-align: center;
   }
 
-  .card {
-    width: 100%;
-    
-  }
+  
 
   .hero {
     padding: 400px 0px 200px 0px;
