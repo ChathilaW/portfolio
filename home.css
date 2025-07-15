@@ -136,9 +136,13 @@
   /*languages & tools*/
   /* Container layout */
   .lan-tool {
-    margin-top: 100px;
-    padding: 0px 200px 0px 200px;
     text-align: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 6.15vw 1.23vw;
+    background-color: #ff8a50;
   }
 
   .lan-tool h4 {
@@ -158,6 +162,8 @@
   .hex-row {
     display: flex;
     gap: 15px;
+    flex: wrap;
+    justify-content: center;
   }
 
   /* Offset every alternate row */
@@ -167,8 +173,8 @@
 
   /* Hexagon shape */
   .hex {
-    width: 130px;
-    height: 130px;
+    width: 8vw;
+    height: 8vw;
     position: relative;
     overflow: hidden;
     background: white;
@@ -195,8 +201,8 @@
   }
 
   .hex-blank {
-    width: 130px;
-    height: 130px;
+    width: 8vw;
+    height: 8vw;
     background: white;
     clip-path: polygon(
       50% 0%, 100% 25%, 100% 75%,
@@ -262,6 +268,8 @@
     gap: 5px;
   }
 
+
+
     /* Mobile phones (up to 600px) */
 @media screen and (max-width: 600px) {
   header {
@@ -303,9 +311,6 @@
     text-align: left;
   }
 
-  .hero {
-    padding: 150px 10px 50px 10px; /* reduce padding for mobile */
-  }
 
   .about-details {
     flex-direction: column;
@@ -318,6 +323,21 @@
   .about-pic {
     width: 90%;
     height: auto;
+  }
+
+  .education-box{
+    width: 85%;
+    height: auto;
+  }
+
+
+  .hex-row, .hex-row.offset {
+    gap: 10px;
+  }
+
+  .hex, .hex-blank {
+    margin: -7px -2px; /* reduce overlap on smaller screens */
+    font-size: 0.9rem;
   }
 
   .top {
@@ -354,6 +374,11 @@
     font-size: 1rem;
   }
 
+  .hero {
+    padding: 400px 0px 200px 0px;
+    text-align: center;
+  }
+
   .about-details {
     justify-content: center;
     flex-direction: row;
@@ -366,21 +391,31 @@
     height: auto;
   }
 
-  .about-para,
-  .about-pic {
-    width: 40%;
-    height: auto;
+  .about-para {
+    width: auto;
+    height: 40%;
+  }
+
+  .education-box{
+    width: auto;
+    height: 40%;
+  }
+
+  .about-pic{
+    min-width: 300px;
+    height: 500px;
   }
 
 
   .lan-tool {
-    padding: 10px 10px; /* reduce horizontal padding */
+    padding: 6.15vw 1.23vw; /* reduce horizontal padding */
   }
 
-  .hex, .hex-blank {
+
+  /*.hex, .hex-blank {
     width: 80px;
     height: 80px;
-  }
+  }*/
 
   .hex-row, .hex-row.offset {
     gap: 10px;
@@ -396,34 +431,6 @@
     height: 100%;
     object-fit: cover;
     clip-path: inherit;
-    opacity: 0.3;
-  }
-  
-  .project-card-cont {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .project-card{
-    width: auto;
-    max-width: 600px;
-  }
-
-  .projects-done{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px 5px 30px 50px;
-    text-align: center;
-  }
-
-  
-
-  .hero {
-    padding: 400px 0px 200px 0px;
-    text-align: center;
   }
 
 }
