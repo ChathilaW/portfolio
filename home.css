@@ -4,7 +4,6 @@
     flex-wrap: wrap;
     width: 100%; /* Adjust for desired content width */
     max-width: 100%; /* Prevents content from stretching too wide */
-    margin: auto; /* Centers the content horizontally */
     padding-top: 50px;
     box-sizing: border-box;
   }
@@ -225,6 +224,7 @@
     margin: 0 auto;
     margin-top: 100px;
     padding: 100px 20px;
+    background-color: aqua;
     }
 
   .projects h4 {
@@ -267,6 +267,107 @@
     align-items: center;
     gap: 5px;
   }
+
+
+
+  /* Container for the timeline */
+.time {
+    padding: 100px 20px;
+    background-color: cyan;
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    margin-top: 100px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Vertical line */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #333;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+/* Timeline item containers */
+.container {
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.container.left {
+    left: 0;
+}
+
+.container.right {
+    left: 50%;
+}
+
+/* Black content cards */
+.content {
+    background-color: #1d1d2e;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    max-width:600px ;
+    color: white;
+}
+
+.company {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.date {
+    color: #bbb;
+    font-size: 0.85rem;
+    margin-top: 10px;
+}
+
+/* Circle markers */
+.circle-left {
+    width: 16px;
+    height: 16px;
+    background-color: #000;
+    border: 3px solid #00ff99;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    z-index: 2;
+    left: 100%;
+    transform: translateX(-50%);
+}
+
+.circle-right {
+    width: 16px;
+    height: 16px;
+    background-color: #000;
+    border: 3px solid #00ff99;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    z-index: 2;
+    left: 0;
+    transform: translateX(-50%);
+}
 
 
 
@@ -344,6 +445,34 @@
     bottom: 10px;
     right: 10px;
   }
+
+
+  .timeline::after {
+        left: 20px;
+        transform: none;
+    }
+
+    .container {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 20px;
+        margin-bottom: 30px;
+    }
+
+    .container.left,
+    .container.right {
+        left: 0;
+    }
+
+    .circle-left,
+    .circle-right {
+        left: 10px;
+        transform: none;
+    }
+
+    .content {
+        margin-left: 40px;
+    }
 }
 
 
